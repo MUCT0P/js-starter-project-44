@@ -1,4 +1,4 @@
-import { getRandomNum, gameTemplate } from '../index.js';
+import { getRandomNum, getGameRound } from '../index.js';
 
 const isPrime = (num) => {
   const sqRoot = Math.floor(Math.sqrt(num));
@@ -17,6 +17,6 @@ const prime = () => {
   return [question, correctAnswer];
 };
 
-const startPrimeGame = () => gameTemplate(toDo, prime);
+const startPrimeGame = () => getGameRound(toDo, prime);
 
 export default startPrimeGame;

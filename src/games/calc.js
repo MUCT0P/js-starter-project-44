@@ -1,5 +1,5 @@
 import {
-  getRandomNum, gameTemplate,
+  getRandomNum, getGameRound,
 } from '../index.js';
 
 const mathOperator = () => {
@@ -33,6 +33,6 @@ const calculator = () => {
   return [expression, correctAnswer];
 };
 
-const startCalcGame = () => gameTemplate(toDo, calculator);
+const startCalcGame = () => getGameRound(toDo, calculator);
 
 export default startCalcGame;

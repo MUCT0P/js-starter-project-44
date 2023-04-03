@@ -1,5 +1,5 @@
 import {
-  gameTemplate, getRandomNum,
+  getGameRound, getRandomNum,
 } from '../index.js';
 
 const generateProgression = (firstNum, step, length) => {
@@ -26,6 +26,6 @@ const progression = () => {
   return [expression, correctAnswer];
 };
 
-const startProgressionGame = () => gameTemplate(toDo, progression);
+const startProgressionGame = () => getGameRound(toDo, progression);
 
 export default startProgressionGame;

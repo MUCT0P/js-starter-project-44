@@ -5,7 +5,7 @@ const getRandomNum = (max = 30, step = 1) => {
   return random;
 };
 
-const gameTemplate = (toDo, task) => {
+const getGameRound = (toDo, task) => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
@@ -26,5 +26,5 @@ Let's try again, ${name}!`);
 };
 
 export {
-  getRandomNum, gameTemplate,
+  getRandomNum, getGameRound,
 };

@@ -1,4 +1,4 @@
-import { gameTemplate, getRandomNum } from '../index.js';
+import { getGameRound, getRandomNum } from '../index.js';
 
 const findGcd = (num1, num2) => {
   let min;
@@ -25,6 +25,6 @@ const gcd = () => {
   return [expression, correctAnswer];
 };
 
-const startGcdGame = () => gameTemplate(toDo, gcd);
+const startGcdGame = () => getGameRound(toDo, gcd);
 
 export default startGcdGame;

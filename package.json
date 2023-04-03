@@ -10,7 +10,7 @@
     "brain-prime": "bin/brain-prime.js"
   },
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/MUCT0P/js-starter-project-44/workflows/hexlet-check/badge.svg)](https://github.com/MUCT0P/js-starter-project-44/actions)",
+  "description": "Starter project for building CLI games with Node.js",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

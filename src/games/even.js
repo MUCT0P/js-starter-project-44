@@ -1,4 +1,4 @@
-import { getRandomNum, gameTemplate } from '../index.js';
+import { getRandomNum, getGameRound } from '../index.js';
 
 const isEven = (num) => {
   if (num % 2 === 0) {
@@ -15,6 +15,6 @@ const even = () => {
   return [expression, correctAnswer];
 };
 
-const startEvenGame = () => gameTemplate(toDo, even);
+const startEvenGame = () => getGameRound(toDo, even);
 
 export default startEvenGame;
