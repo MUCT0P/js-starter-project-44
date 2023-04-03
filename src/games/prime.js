@@ -12,15 +12,11 @@ const isPrime = (num) => {
 const toDo = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const prime = () => {
-  const number = getRandomNum();
-  const correctAnswer = (isPrime(number)) ? 'yes' : 'no';
-  const expression = number.toString();
-  return [expression, correctAnswer];
+  const question = getRandomNum();
+  const correctAnswer = isPrime(question) ? 'yes' : 'no';
+  return [question, correctAnswer];
 };
 
 const startPrimeGame = () => gameTemplate(toDo, prime);
 
 export default startPrimeGame;
-
-
-
