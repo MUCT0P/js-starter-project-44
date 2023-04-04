@@ -2,12 +2,10 @@ import getGameRound from '../index.js';
 import getRandomNum from '../helpers/get-random-from-range.js';
 
 const isPrime = (num) => {
-  const sqRoot = Math.floor(Math.sqrt(num));
-  for (let i = 2; i <= sqRoot; i += 1) {
-    if (num % i === 0 || num < 2) {
-      return false;
-    }
-  } return true;
+  for (let i = 2, s = Math.sqrt(num); i <= s; i += 1) {
+    if (num % i === 0) return false;
+  }
+  return num > 1;
 };
 
 const toDo = 'Answer "yes" if given number is prime. Otherwise answer "no".';
