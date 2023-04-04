@@ -1,10 +1,10 @@
-import {
-  getRandomNum, getGameRound,
-} from '../index.js';
+import getGameRound from '../index.js';
+import getRandomNum from '../helpers/get-random-from-range.js';
+import getRandomNumber from '../helpers/get-random.js';
 
 const mathOperator = () => {
   const operators = ['+', '-', '*'];
-  const operatorSelection = Math.floor(Math.random() * operators.length);
+  const operatorSelection = getRandomNumber();
   return operators[operatorSelection];
 };
 

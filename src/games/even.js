@@ -1,10 +1,7 @@
-import { getRandomNum, getGameRound } from '../index.js';
+import getGameRound from '../index.js';
+import getRandomNum from '../helpers/get-random-from-range.js';
 
-const isEven = (num) => {
-  if (num % 2 === 0) {
-    return true;
-  } return false;
-};
+const isEven = (num) => (num % 2 === 0);
 
 const toDo = 'Answer "yes" if the number is even, otherwise answer "no".';
 

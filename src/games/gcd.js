@@ -1,4 +1,5 @@
-import { getGameRound, getRandomNum } from '../index.js';
+import getGameRound from '../index.js';
+import getRandomNum from '../helpers/get-random-from-range.js';
 
 const findGcd = (num1, num2) => {
   let min;

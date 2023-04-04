@@ -1,6 +1,5 @@
-import {
-  getGameRound, getRandomNum,
-} from '../index.js';
+import getGameRound from '../index.js';
+import getRandomNum from '../helpers/get-random-from-range.js';
 
 const generateProgression = (firstNum, step, length) => {
   const numbers = [];

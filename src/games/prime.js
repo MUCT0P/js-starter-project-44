@@ -1,4 +1,5 @@
-import { getRandomNum, getGameRound } from '../index.js';
+import getGameRound from '../index.js';
+import getRandomNum from '../helpers/get-random-from-range.js';
 
 const isPrime = (num) => {
   const sqRoot = Math.floor(Math.sqrt(num));
