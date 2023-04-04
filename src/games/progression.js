@@ -4,7 +4,7 @@ import getRandomNum from '../helpers/get-random-from-range.js';
 const generateProgression = (firstNum, step, length) => {
   const numbers = [];
   let numberRow = firstNum;
-  for (let i = 0; i < length; i += 1) {
+  for (let i = 0; i <= length; i += 1) {
     numbers.push(numberRow);
     numberRow += step;
   }
